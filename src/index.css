@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+.scroll-down{
+    animation: scrollDown 0.1s ease-in 1 ;
+}
+
+.left-to-right{
+    animation: leftToRight 1s ease-in-out infinite;
+}
+
+@keyframes scrollDown {
+
+    0%{
+        top: -50px;
+    }
+    100%{
+        top: 0;
+    }
+    
+}
+
+@keyframes leftToRight {
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 100%;
+    }
+}
